@@ -34,7 +34,6 @@ if isPlayer(cid) == TRUE and item.actionid == 8000 then
 	
 		-- Assuming 'item' is the item that triggered this code
 	elseif item.uid == 8213 then
-		local cid = getPlayerByName(getCreatureName(uid)) -- Assuming uid is the player's unique identifier
 
 		-- Check if the player has the required items in their inventory
 		if getPlayerItemCount(cid, 2335) > 0 and getPlayerItemCount(cid, 2336) > 0 and getPlayerItemCount(cid, 2337) > 0
@@ -58,8 +57,12 @@ if isPlayer(cid) == TRUE and item.actionid == 8000 then
 			-- Inform the player that they don't have the required items
 			doPlayerSendTextMessage(cid, MESSAGE_STATUS_WARNING, "You don't have the required items.")
 		end
-	end
 
+
+
+
+	
+	
 	
 	
 	--//Paradox Quest, Removing Rewards//--

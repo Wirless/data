@@ -206,3 +206,4 @@
 [3/2/2023 19:30:49] (Error - ?open@ServicePort@@QEAAXV?$vector@Vaddress@ip@asio@boost@@V?$allocator@Vaddress@ip@asio@boost@@@std@@@std@@G@Z) NETWORK: bind: The requested address is not valid in its context
 [21/12/2023 18:7:59] (Error - ?open@ServicePort@@QEAAXV?$vector@Vaddress@ip@asio@boost@@V?$allocator@Vaddress@ip@asio@boost@@@std@@@std@@G@Z) NETWORK: bind: The requested address is not valid in its context
 [21/12/2023 18:10:59] (Error - ?open@ServicePort@@QEAAXV?$vector@Vaddress@ip@asio@boost@@V?$allocator@Vaddress@ip@asio@boost@@@std@@@std@@G@Z) NETWORK: bind: The requested address is not valid in its context
+[21/12/2023 19:9:22] (Error - ?open@ServicePort@@QEAAXV?$vector@Vaddress@ip@asio@boost@@V?$allocator@Vaddress@ip@asio@boost@@@std@@@std@@G@Z) NETWORK: bind: The requested address is not valid in its context

@@ -40875,7 +40875,6 @@
 	<spawn centerx="33156" centery="31598" centerz="14" radius="1">
 		<monster name="stone golem" x="1" y="0" z="14" spawntime="120" />
 	</spawn>
-	
 	<spawn centerx="32683" centery="31600" centerz="14" radius="4">
 		<monster name="elf" x="3" y="-3" z="14" spawntime="120" />
 		<monster name="elf" x="-4" y="-2" z="14" spawntime="120" />
@@ -41202,7 +41201,7 @@
 	</spawn>
 	<spawn centerx="33198" centery="31678" centerz="14" radius="1">
 		<monster name="demon skeleton" x="1" y="-1" z="14" spawntime="120" />
-			</spawn>
+	</spawn>
 	<spawn centerx="33339" centery="31678" centerz="14" radius="1">
 		<monster name="behemoth" x="0" y="-1" z="14" spawntime="120" />
 	</spawn>
@@ -41226,7 +41225,7 @@
 	</spawn>
 	<spawn centerx="33195" centery="31682" centerz="14" radius="1">
 		<monster name="orc shaman" x="0" y="-1" z="14" spawntime="120" />
-		</spawn>
+	</spawn>
 	<spawn centerx="33337" centery="31682" centerz="14" radius="1">
 		<monster name="behemoth" x="1" y="1" z="14" spawntime="120" />
 	</spawn>
@@ -41861,11 +41860,7 @@
 		<monster name="cyclops" x="-2" y="1" z="14" spawntime="120" />
 		<monster name="cyclops" x="3" y="1" z="14" spawntime="120" />
 	</spawn>
-	
-	
-	
 	<spawn centerx="32979" centery="32272" centerz="14" radius="4" />
-	
 	<spawn centerx="32834" centery="32289" centerz="14" radius="1">
 		<npc name="A Ghostly Woman" x="0" y="1" z="14" spawntime="120" />
 	</spawn>
@@ -41967,7 +41962,6 @@
 	<spawn centerx="32849" centery="32345" centerz="14" radius="2">
 		<monster name="spectre" x="0" y="-1" z="14" spawntime="120" />
 	</spawn>
-
 	<spawn centerx="32797" centery="32347" centerz="14" radius="2">
 		<monster name="Nightmare" x="1" y="-2" z="14" spawntime="120" />
 		<monster name="Nightmare" x="0" y="2" z="14" spawntime="120" />
@@ -43903,7 +43897,6 @@
 	<spawn centerx="33131" centery="31626" centerz="15" radius="1">
 		<monster name="hero" x="1" y="0" z="15" spawntime="120" />
 	</spawn>
-	
 	<spawn centerx="32396" centery="31629" centerz="15" radius="3">
 		<monster name="elf arcanist" x="1" y="-2" z="15" spawntime="120" />
 		<monster name="elf arcanist" x="1" y="1" z="15" spawntime="120" />
@@ -45328,7 +45321,6 @@
 		<monster name="demon skeleton" x="1" y="3" z="15" spawntime="120" />
 		<monster name="mummy" x="0" y="5" z="15" spawntime="120" />
 	</spawn>
-	
 	<spawn centerx="33184" centery="32806" centerz="15" radius="4">
 		<monster name="dragon" x="1" y="-1" z="15" spawntime="120" />
 		<monster name="flamethrower" x="-3" y="0" z="15" spawntime="120" />

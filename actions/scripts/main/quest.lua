@@ -3539,6 +3539,26 @@ end
 	doPlayerSendTextMessage(cid,22,"it's empty.")
 	end
 -----
+-- Explorer Brooch --
+elseif item.uid == 8235 then
+	if getPlayerStorageValue(cid,8235) <= 0 then
+		if getPlayerFreeCap(cid) <= 1 then
+		doPlayerSendTextMessage(cid,22,"You need 1 cap or more to loot this!")
+		return TRUE
+		end
+		doPlayerSendTextMessage(cid,22,"You have found an family brooch")
+		doPlayerAddItem(cid, Cffamilybrooch, 1)
+		setPlayerStorageValue(cid,8065,1)
+		if addXP == 1 then
+doPlayerAddExperience(cid, 25000*XPM)
+makeffect(cid)
+end
+	else
+	doPlayerSendTextMessage(cid,22,"it's empty.")
+	end
+-----
+
+
 -----
 else	
   return 0

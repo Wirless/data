@@ -30,26 +30,36 @@ if isPlayer(cid) == TRUE and item.actionid == 8000 then
 	
 	
 	
+	
+	
+		-- Assuming 'item' is the item that triggered this code
 	elseif item.uid == 8213 then
-	Hotaitem1 = getThingfromPos({x=33198, y=32876, z=11, stackpos=2})
-	Hotaitem2 = getThingfromPos({x=33198, y=32876, z=11, stackpos=2})
-	Hotaitem3 = getThingfromPos({x=33198, y=32876, z=11, stackpos=2})
-	Hotaitem4 = getThingfromPos({x=33198, y=32876, z=11, stackpos=2})
-	Hotaitem5 = getThingfromPos({x=33198, y=32876, z=11, stackpos=2})
-	Hotaitem6 = getThingfromPos({x=33198, y=32876, z=11, stackpos=2})
-	Hotaitem7 = getThingfromPos({x=33198, y=32876, z=11, stackpos=2})
-		if Hotaitem1.itemid == 2335 and Hotaitem2.itemid == 2336 and Hotaitem3.itemid == 2337 and Hotaitem4.itemid == 2338 and Hotaitem5.itemid == 2339 and Hotaitem6.itemid == 2340 and Hotaitem7.itemid == 2341 then
-		doRemoveItem(Hotaitem1.uid)
-		doRemoveItem(Hotaitem2.uid)
-		doRemoveItem(Hotaitem3.uid)
-		doRemoveItem(Hotaitem4.uid)
-		doRemoveItem(Hotaitem5.uid)
-		doRemoveItem(Hotaitem6.uid)
-		doRemoveItem(Hotaitem7.uid)
-		doAddPlayerItem(cid, 2342, 1)
-		doSendMagicEffect(cid, 83)
+		local cid = getPlayerByName(getCreatureName(uid)) -- Assuming uid is the player's unique identifier
+
+		-- Check if the player has the required items in their inventory
+		if getPlayerItemCount(cid, 2335) > 0 and getPlayerItemCount(cid, 2336) > 0 and getPlayerItemCount(cid, 2337) > 0
+				and getPlayerItemCount(cid, 2338) > 0 and getPlayerItemCount(cid, 2339) > 0
+				and getPlayerItemCount(cid, 2340) > 0 and getPlayerItemCount(cid, 2341) > 0 then
+			-- Remove the required items from the player's inventory
+			doPlayerRemoveItem(cid, 2335, 1)
+			doPlayerRemoveItem(cid, 2336, 1)
+			doPlayerRemoveItem(cid, 2337, 1)
+			doPlayerRemoveItem(cid, 2338, 1)
+			doPlayerRemoveItem(cid, 2339, 1)
+			doPlayerRemoveItem(cid, 2340, 1)
+			doPlayerRemoveItem(cid, 2341, 1)
+
+			-- Create item 2342 at the specified position
+			doCreateItem(2342, 1, {x=33198, y=32876, z=11})
+
+			-- Send a magic effect to the player
+			doSendMagicEffect(getCreaturePosition(cid), 83)
+		else
+			-- Inform the player that they don't have the required items
+			doPlayerSendTextMessage(cid, MESSAGE_STATUS_WARNING, "You don't have the required items.")
 		end
-		
+	end
+
 	
 	
 	--//Paradox Quest, Removing Rewards//--

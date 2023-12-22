@@ -20,10 +20,7 @@ local weaponboxstorage = getPlayerStorageValue(cid, 7141) + 1
 print(generuj)
 setPlayerStorageValue(cid, 7141, weaponboxstorage)
 doRemoveItem(item.uid, 1)	
-addEvent(fa, 500, cid)
-addEvent(fa, 600, cid)
-addEvent(fa, 700, cid)
-addEvent(fa, 800, cid)
+
 makeffectsz(cid)
 		if generuj <= 2500 then
 			-- COMMON
@@ -149,8 +146,7 @@ makeffectsz(cid)
 		elseif generuj <= 9700 and generuj > 9600 then
 			-- ULTIMATE chance
 			backpack = doPlayerAddItem(cid, 1988, 1)
-			doAddContainerItem(backpack, Cfwarlordsword, 1)
-			
+			doAddContainerItem(backpack, 2408, 1)
 			doSendAnimatedText(getPlayerPosition(cid), "ULTIMATE!", TEXTCOLOR_RED)
 			doSendMagicEffect(getPlayerPosition(cid), 26)
 		elseif generuj <= 9800 and generuj > 9700 then

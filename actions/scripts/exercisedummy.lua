@@ -1,8 +1,8 @@
 ---@ Create by Sarah Wesker | Tested Version: TFS 0.4
 ---@ list of training dummies.
 local dummies = {
-    [6431] = { skillRate = 0.1, skillSpeed = 1 },
-    [6432] = { skillRate = 0.1, skillSpeed = 1 }
+    [6431] = { skillRate = 1.2, skillSpeed = 1 },
+    [6432] = { skillRate = 1.2, skillSpeed = 3 }
 }
 
 ---@ Global training parameters of the system.

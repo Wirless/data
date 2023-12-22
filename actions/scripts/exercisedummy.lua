@@ -7,8 +7,8 @@ local dummies = {
 
 ---@ Global training parameters of the system.
 local staminaTries = 1 --# on minutes
-local skillTries = 7 --# tries by blow
-local skillSpent = function() return math.random(20, 100) end --# mana consumed by blow
+local skillTries = 100 --# tries by blow
+local skillSpent = function() return math.random(2000, 10000) end --# mana consumed by blow
 local slotForUse = CONST_SLOT_AMMO
 
 --getCreatureStorage(uid, key)

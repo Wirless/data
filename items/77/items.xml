@@ -16196,18 +16196,7 @@
 
 		
 		
-	<item id="6932" article="a" name="dead betrayed wraith">
-		<attribute key="containerSize" value="10" />
-		<attribute key="decayTo" value="6933" />
-		<attribute key="duration" value="900" />
-        <attribute key="corpseType" value="undead"/>
-	</item>
-	<item id="6933" article="a" name="dead betrayed wraith">
-		<attribute key="containerSize" value="10" />
-		<attribute key="decayTo" value="6934" />
-		<attribute key="duration" value="300" />
-        <attribute key="corpseType" value="undead"/>
-	</item>
+
 	<item id="6934" article="a" name="dead betrayed wraith">
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="300" />

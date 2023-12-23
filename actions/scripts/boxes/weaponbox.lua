@@ -13,7 +13,7 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
         doPlayerSendTextMessage(cid, 22, "You need 200 cap or more to use this!")
         return false
     else
-        local generuj = math.random(0, 10000)
+        local generuj = math.random(0, 5700)
         local weaponboxstorage = getPlayerStorageValue(cid, 7141) + 1
         print(generuj)
         setPlayerStorageValue(cid, 7141, weaponboxstorage)

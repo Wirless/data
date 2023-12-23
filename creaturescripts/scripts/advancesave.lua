@@ -10,10 +10,9 @@ function onAdvance(cid, skill, oldLevel, newLevel)
 
 	if(skill == SKILL__LEVEL)  then
 		doSendAnimatedText(getPlayerPosition(cid), "LEVEL UP", TEXTCOLOR_WHITE)
-	if (config.healPlayeronLevel) then
 		doCreatureAddHealth(cid, getCreatureMaxHealth(cid) - getCreatureHealth(cid))
 		doCreatureAddMana(cid, getCreatureMaxMana(cid) - getCreatureMana(cid))
-		end
+
 	end
 	if(skill == SKILL__MAGLEVEL) then
 		doSendAnimatedText(getPlayerPosition(cid), "MAGIC UP", TEXTCOLOR_BLUE)

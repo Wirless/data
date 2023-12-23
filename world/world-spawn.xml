@@ -43950,8 +43950,26 @@
 		<monster name="warlock" x="2" y="-1" z="15" spawntime="120" />
 		<monster name="warlock" x="-2" y="2" z="15" spawntime="120" />
 	</spawn>
+	<spawn centerx="32416" centery="31656" centerz="15" radius="1">
+		<monster name="warlock" x="1" y="-1" z="15" spawntime="60" direction="2" />
+		<monster name="warlock" x="0" y="0" z="15" spawntime="60" direction="2" />
+		<monster name="warlock" x="1" y="0" z="15" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32426" centery="31656" centerz="15" radius="1">
+		<monster name="warlock" x="0" y="0" z="15" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32433" centery="31657" centerz="15" radius="1">
+		<monster name="warlock" x="0" y="0" z="15" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32435" centery="31657" centerz="15" radius="1">
+		<monster name="warlock" x="0" y="-1" z="15" spawntime="60" direction="2" />
+		<monster name="warlock" x="0" y="0" z="15" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="33294" centery="31659" centerz="15" radius="2">
 		<monster name="behemoth" x="1" y="1" z="15" spawntime="120" />
+	</spawn>
+	<spawn centerx="32425" centery="31661" centerz="15" radius="1">
+		<monster name="warlock" x="0" y="0" z="15" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="33146" centery="31664" centerz="15" radius="1">
 		<monster name="demon skeleton" x="-1" y="1" z="15" spawntime="120" />
@@ -43964,8 +43982,18 @@
 	<spawn centerx="33142" centery="31666" centerz="15" radius="1">
 		<monster name="fire elemental" x="0" y="1" z="15" spawntime="120" />
 	</spawn>
+	<spawn centerx="32434" centery="31667" centerz="15" radius="1">
+		<monster name="warlock" x="0" y="0" z="15" spawntime="60" direction="2" />
+		<monster name="warlock" x="0" y="1" z="15" spawntime="60" direction="2" />
+		<monster name="warlock" x="1" y="1" z="15" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="33298" centery="31667" centerz="15" radius="2">
 		<monster name="behemoth" x="1" y="0" z="15" spawntime="120" />
+	</spawn>
+	<spawn centerx="32419" centery="31669" centerz="15" radius="1">
+		<monster name="warlock" x="-1" y="-1" z="15" spawntime="60" direction="2" />
+		<monster name="warlock" x="-1" y="0" z="15" spawntime="60" direction="2" />
+		<monster name="warlock" x="0" y="0" z="15" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="33145" centery="31670" centerz="15" radius="1">
 		<monster name="fire elemental" x="-1" y="0" z="15" spawntime="120" />
@@ -43975,6 +44003,9 @@
 	</spawn>
 	<spawn centerx="33138" centery="31671" centerz="15" radius="1">
 		<monster name="demon skeleton" x="-1" y="1" z="15" spawntime="120" />
+	</spawn>
+	<spawn centerx="32425" centery="31672" centerz="15" radius="1">
+		<monster name="warlock" x="0" y="0" z="15" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="33274" centery="31675" centerz="15" radius="2">
 		<monster name="behemoth" x="2" y="2" z="15" spawntime="120" />
@@ -44013,10 +44044,21 @@
 		<monster name="cyclops" x="-2" y="0" z="15" spawntime="120" />
 	</spawn>
 	<spawn centerx="33333" centery="31685" centerz="15" radius="2" />
+	<spawn centerx="32416" centery="31686" centerz="15" radius="1">
+		<monster name="warlock" x="0" y="-1" z="15" spawntime="60" direction="2" />
+		<monster name="warlock" x="1" y="-1" z="15" spawntime="60" direction="2" />
+		<monster name="warlock" x="0" y="0" z="15" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="33168" centery="31686" centerz="15" radius="3">
 		<monster name="Hellfire Fighter" x="-1" y="-1" z="15" spawntime="120" />
 		<monster name="fire elemental" x="2" y="-1" z="15" spawntime="120" />
 		<monster name="Hellfire Fighter" x="0" y="3" z="15" spawntime="120" />
+	</spawn>
+	<spawn centerx="32431" centery="31687" centerz="15" radius="1">
+		<monster name="warlock" x="0" y="0" z="15" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32444" centery="31687" centerz="15" radius="1">
+		<monster name="warlock" x="0" y="0" z="15" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="33307" centery="31689" centerz="15" radius="2">
 		<monster name="behemoth" x="1" y="-1" z="15" spawntime="120" />
@@ -44028,6 +44070,9 @@
 	</spawn>
 	<spawn centerx="33296" centery="31692" centerz="15" radius="2">
 		<monster name="behemoth" x="0" y="-1" z="15" spawntime="120" />
+	</spawn>
+	<spawn centerx="32424" centery="31697" centerz="15" radius="1">
+		<monster name="warlock" x="0" y="0" z="15" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="33090" centery="31697" centerz="15" radius="1">
 		<monster name="fire elemental" x="-1" y="0" z="15" spawntime="120" />
@@ -44076,16 +44121,29 @@
 	<spawn centerx="33120" centery="31709" centerz="15" radius="1">
 		<monster name="fire elemental" x="-1" y="0" z="15" spawntime="120" />
 	</spawn>
+	<spawn centerx="32416" centery="31710" centerz="15" radius="1">
+		<monster name="warlock" x="-1" y="-1" z="15" spawntime="60" direction="2" />
+		<monster name="warlock" x="0" y="-1" z="15" spawntime="60" direction="2" />
+		<monster name="warlock" x="0" y="0" z="15" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="33136" centery="31712" centerz="15" radius="1">
 		<monster name="stalker" x="0" y="-1" z="15" spawntime="120" />
 	</spawn>
 	<spawn centerx="33309" centery="31712" centerz="15" radius="2" />
+	<spawn centerx="32431" centery="31713" centerz="15" radius="1">
+		<monster name="warlock" x="0" y="-1" z="15" spawntime="60" direction="2" />
+		<monster name="warlock" x="0" y="0" z="15" spawntime="60" direction="2" />
+		<monster name="warlock" x="1" y="0" z="15" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="33123" centery="31713" centerz="15" radius="1">
 		<monster name="fire elemental" x="0" y="-1" z="15" spawntime="120" />
 	</spawn>
 	<spawn centerx="33272" centery="31714" centerz="15" radius="2" />
 	<spawn centerx="33339" centery="31715" centerz="15" radius="2">
 		<monster name="behemoth" x="1" y="-1" z="15" spawntime="120" />
+	</spawn>
+	<spawn centerx="32424" centery="31716" centerz="15" radius="1">
+		<monster name="warlock" x="0" y="0" z="15" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="33316" centery="31716" centerz="15" radius="2" />
 	<spawn centerx="33300" centery="31717" centerz="15" radius="5">
@@ -44122,11 +44180,30 @@
 		<monster name="stone golem" x="-2" y="0" z="15" spawntime="120" />
 		<monster name="elf arcanist" x="2" y="1" z="15" spawntime="120" />
 	</spawn>
+	<spawn centerx="32425" centery="31723" centerz="15" radius="1">
+		<monster name="warlock" x="0" y="0" z="15" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="33085" centery="31723" centerz="15" radius="1">
 		<monster name="fire elemental" x="0" y="1" z="15" spawntime="120" />
 	</spawn>
 	<spawn centerx="33116" centery="31724" centerz="15" radius="1">
 		<monster name="fire elemental" x="0" y="-1" z="15" spawntime="120" />
+	</spawn>
+	<spawn centerx="32417" centery="31729" centerz="15" radius="1">
+		<monster name="warlock" x="0" y="0" z="15" spawntime="60" direction="2" />
+		<monster name="warlock" x="1" y="0" z="15" spawntime="60" direction="2" />
+		<monster name="warlock" x="1" y="1" z="15" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32419" centery="31729" centerz="15" radius="1">
+		<monster name="warlock" x="0" y="0" z="15" spawntime="60" direction="2" />
+		<monster name="warlock" x="0" y="1" z="15" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32435" centery="31729" centerz="15" radius="1">
+		<monster name="warlock" x="0" y="0" z="15" spawntime="60" direction="2" />
+		<monster name="warlock" x="1" y="0" z="15" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32437" centery="31729" centerz="15" radius="1">
+		<monster name="warlock" x="0" y="0" z="15" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="33301" centery="31736" centerz="15" radius="2">
 		<monster name="behemoth" x="1" y="0" z="15" spawntime="120" />

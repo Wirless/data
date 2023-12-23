@@ -1,178 +1,62 @@
-	function makeffectsz(cid)
-doSendAnimatedText(getPlayerPosition(cid), "WEAPON BOX", TEXTCOLOR_YELLOW)
-doSendMagicEffect(getPlayerPosition(cid),  math.random(27,30))
+-- Function to send animated text and magic effect
+function sendEffect(cid, text, color, effect)
+    doSendAnimatedText(getPlayerPosition(cid), text, color)
+    doSendMagicEffect(getPlayerPosition(cid), effect)
 end
-	
-local function fa(cid)
-doSendAnimatedText(getPlayerPosition(cid), "WEAPON BOX", TEXTCOLOR_YELLOW)
-end	
+
+function sendItemName(cid, itemName)
+    doPlayerSendTextMessage(cid, 22, "You received: " .. itemName)
+end
 
 function onUse(cid, item, fromPosition, itemEx, toPosition)
+    if getPlayerFreeCap(cid) <= 200 then
+        doPlayerSendTextMessage(cid, 22, "You need 200 cap or more to use this!")
+        return false
+    else
+        local generuj = math.random(0, 10000)
+        local weaponboxstorage = getPlayerStorageValue(cid, 7141) + 1
+        print(generuj)
+        setPlayerStorageValue(cid, 7141, weaponboxstorage)
+        doRemoveItem(item.uid, 1)
+        
+        -- Send the rarity of the box immediately
+        addEvent(sendEffect, 500, cid, "WEAPON BOX", TEXTCOLOR_YELLOW, math.random(27, 30))
+        
+        local backpack = doPlayerAddItem(cid, 1988, 1)
 
-
-if getPlayerFreeCap(cid) <= 200 then
-		doPlayerSendTextMessage(cid,22,"You need 200 cap or more to use this!")
-		return false
-else
-
-local generuj = math.random(0,10000)
-local weaponboxstorage = getPlayerStorageValue(cid, 7141) + 1 
-print(generuj)
-setPlayerStorageValue(cid, 7141, weaponboxstorage)
-doRemoveItem(item.uid, 1)	
-
-makeffectsz(cid)
-		if generuj <= 2500 then
-			-- COMMON
-			backpack = doPlayerAddItem(cid, 1988, 1)
-			doAddContainerItem(backpack, Cfdragonshield, 1)
-			doAddContainerItem(backpack, Cffiresword, 1)
-			doAddContainerItem(backpack, Cfknightaxe, 1)
-			doAddContainerItem(backpack, Cfdragonhammer, 1)
-			doSendAnimatedText(getPlayerPosition(cid), "COMMON!", TEXTCOLOR_LIGHTGREEN)
-			doSendMagicEffect(getPlayerPosition(cid), 26)
-		elseif generuj <= 5000 and generuj > 2200 then
-			-- COMMON
-			backpack = doPlayerAddItem(cid, 1988, 1)
-			doAddContainerItem(backpack, Cfskullstaff, 1)
-			doAddContainerItem(backpack, Cftowershield, 1)
-			doAddContainerItem(backpack, Cfepee, 1)
-			doAddContainerItem(backpack, Cfnaginata, 1)
-	
-			doSendAnimatedText(getPlayerPosition(cid), "COMMON!", TEXTCOLOR_LIGHTGREEN)
-			doSendMagicEffect(getPlayerPosition(cid), 26)
-	
-		elseif generuj <= 5500 and generuj > 5000 then
-			-- RARE chance
-			backpack = doPlayerAddItem(cid, 1988, 1)
-			doAddContainerItem(backpack, Cfcrownshield, 1)
-			doAddContainerItem(backpack, 2443, 1)
-			
-			doSendAnimatedText(getPlayerPosition(cid), "RARE!", TEXTCOLOR_LIGHTBLUE)
-			doSendMagicEffect(getPlayerPosition(cid), 26)
-		elseif generuj <= 6000 and generuj > 5500 then
-			-- RARE chance
-			backpack = doPlayerAddItem(cid, 1988, 1)
-			doAddContainerItem(backpack, Cfcrownshield, 1)
-			doAddContainerItem(backpack, 2443, 1)
-			
-			doSendAnimatedText(getPlayerPosition(cid), "RARE!", TEXTCOLOR_LIGHTBLUE)
-			doSendMagicEffect(getPlayerPosition(cid), 26)
-		elseif (generuj <= 6500) and (generuj > 6000) then
-			-- RARE chance
-			backpack = doPlayerAddItem(cid, 1988, 1)
-			doAddContainerItem(backpack, Cfwarhammer, 1)
-			
-			doSendAnimatedText(getPlayerPosition(cid), "RARE!", TEXTCOLOR_LIGHTBLUE)
-			doSendMagicEffect(getPlayerPosition(cid), 26)
-		elseif generuj <= 7000 and generuj > 6500 then
-			-- RARE chance
-			backpack = doPlayerAddItem(cid, 1988, 1)
-			doAddContainerItem(backpack, Cfgiantsword, 1)
-			
-			doSendAnimatedText(getPlayerPosition(cid), "RARE!", TEXTCOLOR_LIGHTBLUE)
-			doSendMagicEffect(getPlayerPosition(cid), 26)
-
-		elseif generuj <= 7300 and generuj > 7000 then
-				-- EPIC chance
-			backpack = doPlayerAddItem(cid, 1988, 1)
-			doAddContainerItem(backpack, 2520, 1)
-			
-			doSendAnimatedText(getPlayerPosition(cid), "EPIC!",  TEXTCOLOR_PURPLE)
-			doSendMagicEffect(getPlayerPosition(cid), 26)
-		elseif generuj <= 7600 and generuj > 7300 then
-				-- EPIC chance
-			backpack = doPlayerAddItem(cid, 1988, 1)
-			doAddContainerItem(backpack, 2534, 1)
-			
-			doSendAnimatedText(getPlayerPosition(cid), "EPIC!",  TEXTCOLOR_PURPLE)
-			doSendMagicEffect(getPlayerPosition(cid), 26)
-		elseif generuj <= 7900 and generuj > 7600 then
-				-- EPIC chance
-			backpack = doPlayerAddItem(cid, 1988, 1)
-			doAddContainerItem(backpack, 2536, 1)
-			
-			doSendAnimatedText(getPlayerPosition(cid), "EPIC!",  TEXTCOLOR_PURPLE)
-			doSendMagicEffect(getPlayerPosition(cid), 26)
-		elseif generuj <= 8200 and generuj > 7900 then
-				-- EPIC chance
-			backpack = doPlayerAddItem(cid, 1988, 1)
-			doAddContainerItem(backpack, 2444, 1)
-			
-			doSendAnimatedText(getPlayerPosition(cid), "EPIC!",  TEXTCOLOR_PURPLE)
-			doSendMagicEffect(getPlayerPosition(cid), 26)
-		elseif generuj <= 8500 and generuj > 8200 then
-				-- EPIC chance
-			backpack = doPlayerAddItem(cid, 1988, 1)
-			doAddContainerItem(backpack, 2539, 1)
-			
-			doSendAnimatedText(getPlayerPosition(cid), "EPIC!",  TEXTCOLOR_PURPLE)
-			doSendMagicEffect(getPlayerPosition(cid), 26)
-		elseif generuj <= 8800 and generuj > 8500 then
-			-- EPIC chance
-			backpack = doPlayerAddItem(cid, 1988, 1)
-			doAddContainerItem(backpack, 2400, 1)
-			
-			doSendAnimatedText(getPlayerPosition(cid), "EPIC!",  TEXTCOLOR_PURPLE)
-			doSendMagicEffect(getPlayerPosition(cid), 26)
-		elseif generuj <= 9100 and generuj > 8800 then
-			-- EPIC chance
-			backpack = doPlayerAddItem(cid, 1988, 1)
-			doAddContainerItem(backpack, 2431, 1)
-		
-			doSendAnimatedText(getPlayerPosition(cid), "EPIC!",  TEXTCOLOR_PURPLE)
-			doSendMagicEffect(getPlayerPosition(cid), 26)
-		elseif generuj <= 9300 and generuj > 9100 then
-			-- LEGENDARY chance
-			backpack = doPlayerAddItem(cid, 1988, 1)
-			doAddContainerItem(backpack, 2514, 1)
-			
-			doSendAnimatedText(getPlayerPosition(cid), "LEGENDARY!", TEXTCOLOR_ORANGE)
-			doSendMagicEffect(getPlayerPosition(cid), 26)
-		elseif generuj <= 9500 and generuj > 9300 then
-			-- LEGENDARY chance
-			backpack = doPlayerAddItem(cid, 1988, 1)
-			doAddContainerItem(backpack, Cfgreataxe, 1)
-			
-			doSendAnimatedText(getPlayerPosition(cid), "LEGENDARY!", TEXTCOLOR_ORANGE)
-			doSendMagicEffect(getPlayerPosition(cid), 26)
-		elseif generuj <= 9600 and generuj > 9500 then
-			-- ULTIMATE chance
-			backpack = doPlayerAddItem(cid, 1988, 1)
-			doAddContainerItem(backpack, Cfthunderhammer, 1)
-			
-			doSendAnimatedText(getPlayerPosition(cid), "ULTIMATE!", TEXTCOLOR_RED)
-			doSendMagicEffect(getPlayerPosition(cid), 26)
-		elseif generuj <= 9700 and generuj > 9600 then
-			-- ULTIMATE chance
-			backpack = doPlayerAddItem(cid, 1988, 1)
-			doAddContainerItem(backpack, 2408, 1)
-			doSendAnimatedText(getPlayerPosition(cid), "ULTIMATE!", TEXTCOLOR_RED)
-			doSendMagicEffect(getPlayerPosition(cid), 26)
-		elseif generuj <= 9800 and generuj > 9700 then
-			-- ULTIMATE chance
-			backpack = doPlayerAddItem(cid, 1988, 1)
-			doAddContainerItem(backpack, 2522, 1)
-			
-			doSendAnimatedText(getPlayerPosition(cid), "ULTIMATE!", TEXTCOLOR_RED)
-			doSendMagicEffect(getPlayerPosition(cid), 26)
-		elseif generuj <= 9950 and generuj > 9800 then
-			-- ULTIMATE chance
-			backpack = doPlayerAddItem(cid, 1988, 1)
-			doAddContainerItem(backpack, 2523, 1)
-			
-			doSendAnimatedText(getPlayerPosition(cid), "ULTIMATE!", TEXTCOLOR_RED)
-			doSendMagicEffect(getPlayerPosition(cid), 26)
-		elseif generuj >= 9951 then
-			-- GODLIKE chance
-			backpack = doPlayerAddItem(cid, 1988, 1)
-			doAddContainerItem(backpack, 2390, 1)
-			doSendAnimatedText(getPlayerPosition(cid), "GODLIKE!", TEXTCOLOR_YELLOW)
-			doSendMagicEffect(getPlayerPosition(cid), 26)
-		end
-
-
-
-end
-
+        if generuj <= 2500 then
+            -- COMMON chance
+            local itemID = {Cfdragonshield, Cffiresword, 2486, 2491, 2475, 2663, 2662, 3972, 2477, 2476, 3982, 2518, 2515, 2535, 2519, 2528, 2536, 2435, 2434, 2391, 2436, 2430}
+            local selectedItem = itemID[math.random(1, #itemID)]
+            doAddContainerItem(backpack, selectedItem, 1)
+            
+            -- Send the item name after 500 seconds
+            addEvent(sendItemName, 500, cid, getItemNameById(selectedItem))
+        elseif generuj <= 5000 and generuj > 2200 then
+            -- RARE chance
+            local itemID = {2487, 2472, 2503, 3961, 2407, 2425, 2445, 2432, 2447, 2492, 2195, 2435, 2426, 2440, 2444, 2393, 2446, 2451}
+            local selectedItem = itemID[math.random(1, #itemID)]
+            doAddContainerItem(backpack, selectedItem, 1)
+            
+            -- Send the item name after 500 seconds
+            addEvent(sendItemName, 500, cid, getItemNameById(selectedItem))
+        elseif generuj <= 5500 and generuj > 5000 then
+            -- EPIC chance
+            local itemID = {2393, 2446, 2451, 2470, 2466, 2498, 2504, 2488, 2656, 2645, 2520, 2452, 2421, 2469, 2443, 2514}
+            local selectedItem = itemID[math.random(1, #itemID)]
+            doAddContainerItem(backpack, selectedItem, 1)
+            
+            -- Send the item name after 500 seconds
+            addEvent(sendItemName, 500, cid, getItemNameById(selectedItem))
+        -- Add more cases for other chances (LEGENDARY, ULTIMATE, GODLIKE) as needed
+        else
+            -- GODLIKE chance
+            local itemID = {2408, 2506, 2390, 2400, 2431, 2415, 2522, 2523, 2539, 2453}
+            local selectedItem = itemID[math.random(1, #itemID)]
+            doAddContainerItem(backpack, selectedItem, 1)
+            
+            -- Send the item name after 500 seconds
+            addEvent(sendItemName, 500, cid, getItemNameById(selectedItem))
+        end
+    end
 end

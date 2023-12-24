@@ -3,7 +3,7 @@ wokacje = {1,2,5,6}
 palek = {3,7}
 knight = {4,8}
 function onUse(cid, item, fromPosition, itemEx, toPosition)
-		if getPlayerMagLevel(cid) <= 140 and isInArray(wokacje, getPlayerVocation(cid)) then
+		if getPlayerMagLevel(cid) <= 660 and isInArray(wokacje, getPlayerVocation(cid)) then
 		doPlayerAddSkill(cid, 7, 1) -- magic
 		doRemoveItem(item.uid, 1)
 		doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "You gain magic level.")

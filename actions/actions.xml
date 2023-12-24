@@ -1019,15 +1019,4 @@ GEMS
 <action itemid="3938" script="others/construction_kits.lua" />
 <action itemid="5086" script="others/construction_kits.lua" />
 
-<action itemid="6876" script="exercisedummy.lua" />
-<action itemid="6877" script="exercisedummy.lua" />
-<action itemid="6878" script="exercisedummy.lua" />
-
-<action itemid="6879" script="exercisedummy.lua" />
-<action itemid="6880" script="exercisedummy.lua" />
-<action itemid="6881" script="exercisedummy.lua" />
-
-
-
-	
 </actions>

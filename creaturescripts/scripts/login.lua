@@ -14,7 +14,7 @@ function onLogin(cid)
 -- Calculate and add experience based on time elapsed since last login
 local secondsElapsed = os.time() - getPlayerLastLogin(cid)
 local experienceToAdd = math.floor(secondsElapsed)
-experienceToAdd = experienceToAdd * storageValue
+experienceToAdd = experienceToAdd
 doPlayerAddExperience(cid, experienceToAdd)
 
 

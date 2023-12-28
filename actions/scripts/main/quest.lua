@@ -44,7 +44,7 @@
 --8212 - Ashmunrah Tomb (Tile that teleport him out)
 --8213 - Compiled the helmet of the ancient
 local addXP = 1
-local XPM = 100
+local XPM = 2
 
 function makeffect(cid)
 doSendAnimatedText(getPlayerPosition(cid), "XP+++", math.random(0,255))

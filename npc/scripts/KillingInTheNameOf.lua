@@ -11,8 +11,8 @@ function onThink()                                      npcHandler:onThink() end
 local choose = {}
 local cancel = {}
 local available = {}
-local EXPMULTIPLIER = 300
-local MONEYMULTIPLIER = 200
+local EXPMULTIPLIER = 3
+local MONEYMULTIPLIER = 2
 
 
 function creatureSayCallback(cid, type, msg)
@@ -164,47 +164,7 @@ function creatureSayCallback(cid, type, msg)
     elseif isInArray({"points", "rank"}, msg:lower()) then
         selfSay("At this time, you have " .. getCreatureStorage(cid, POINTSSTORAGE) .. " Paw & Fur points. You " .. (getPlayerRank(cid) == 5 and "are an Elite Hunter" or getPlayerRank(cid) == 4 and "are a Trophy Hunter" or getPlayerRank(cid) == 3 and "are a Big Game Hunter" or getPlayerRank(cid) == 2 and "are a Ranger" or getPlayerRank(cid) == 1 and "are a Huntsman" or "haven't been ranked yet") .. ".", cid)
         talkState[talkUser] = 0
-		
-	elseif(msgcontains(msg, "exercise wand")) then
-	if(getPlayerItemCount(cid, 2160)) >= 10  and getPlayerFreeCap(cid) >= 5 and (doPlayerRemoveItem(cid, 2160, 10) == TRUE) then
-			npcHandler:say("Here you go!?", cid)
-				--doPlayerRemoveItem(cid, 2157, 5)	
-				doPlayerAddItem(cid, 6876, 100, true)
-			else
-			npcHandler:say("You need to have 10 crystal coins in your backpack", cid)
-			end	
-	elseif(msgcontains(msg, "exercise club")) then
-	if(getPlayerItemCount(cid, 2160)) >= 10  and getPlayerFreeCap(cid) >= 5 and (doPlayerRemoveItem(cid, 2160, 10) == TRUE) then
-			npcHandler:say("Here you go!?", cid)
-				--doPlayerRemoveItem(cid, 2157, 5)	
-				doPlayerAddItem(cid, 6881, 100, true)
-			else
-			npcHandler:say("You need to have 10 crystal coins in your backpack", cid)
-			end	
-	elseif(msgcontains(msg, "exercise axe")) then
-	if(getPlayerItemCount(cid, 2160)) >= 10  and getPlayerFreeCap(cid) >= 5 and (doPlayerRemoveItem(cid, 2160, 10) == TRUE) then
-			npcHandler:say("Here you go!?", cid)
-				--doPlayerRemoveItem(cid, 2157, 5)	
-				doPlayerAddItem(cid, 6879, 100, true)
-			else
-			npcHandler:say("You need to have 10 crystal coins in your backpack", cid)
-			end	
-	elseif(msgcontains(msg, "exercise sword")) then
-	if(getPlayerItemCount(cid, 2160)) >= 10  and getPlayerFreeCap(cid) >= 5 and (doPlayerRemoveItem(cid, 2160, 10) == TRUE) then
-			npcHandler:say("Here you go!?", cid)
-				--doPlayerRemoveItem(cid, 2157, 5)	
-				doPlayerAddItem(cid, 6880, 100, true)
-			else
-			npcHandler:say("You need to have 10 crystal coins in your backpack", cid)
-			end	
-	elseif(msgcontains(msg, "exercise bow")) then
-	if(getPlayerItemCount(cid, 2160)) >= 10  and getPlayerFreeCap(cid) >= 5 and (doPlayerRemoveItem(cid, 2160, 10) == TRUE) then
-			npcHandler:say("Here you go!?", cid)
-				--doPlayerRemoveItem(cid, 2157, 5)	
-				doPlayerAddItem(cid, 6878, 100, true)
-			else
-			npcHandler:say("You need to have 10 crystal coins in your backpack", cid)
-			end	
+
 			
 	elseif(msgcontains(msg, "weapon box")) then
 	if(getPlayerItemCount(cid, 2160)) >= 25  and getPlayerFreeCap(cid) >= 5 and (doPlayerRemoveItem(cid, 2160, 25) == TRUE) then

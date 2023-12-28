@@ -3,11 +3,11 @@
 <stage minlevel="1" maxlevel="8" multiplier="50"/>
 <stage minlevel="8" maxlevel="8" multiplier="20"/>
 
-		<stage minlevel="9" maxlevel="30" multiplier="800"/>
-		<stage minlevel="31" maxlevel="40" multiplier="4000"/>
-		<stage minlevel="41" maxlevel="50" multiplier="2000"/>
-		<stage minlevel="51" maxlevel="60" multiplier="1000"/>
-		<stage minlevel="61" maxlevel="80" multiplier="600"/>
-		<stage minlevel="81" maxlevel="100" multiplier="400"/>
-		<stage minlevel="101" multiplier="300"/>
+        <stage minlevel="9" maxlevel="30" multiplier="1000"/>
+        <stage minlevel="31" maxlevel="40" multiplier="250"/>
+        <stage minlevel="41" maxlevel="50" multiplier="120"/>
+        <stage minlevel="51" maxlevel="60" multiplier="80"/>
+        <stage minlevel="61" maxlevel="80" multiplier="50"/>
+        <stage minlevel="81" maxlevel="100" multiplier="20"/>
+        <stage minlevel="101" multiplier="7"/>
 </stages>

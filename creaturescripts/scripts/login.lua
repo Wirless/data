@@ -11,15 +11,19 @@ local light = createConditionObject(CONDITION_LIGHT, -1, false, 0, CONDITIONID_D
 
 
 function onLogin(cid)
+-- Calculate and add experience based on time elapsed since last login
+local secondsElapsed = os.time() - getPlayerLastLogin(cid)
+local experienceToAdd = math.floor(secondsElapsed)
+experienceToAdd = experienceToAdd * storageValue
+doPlayerAddExperience(cid, experienceToAdd)
 
 
-	
-	
-doPlayerSetLossPercent(cid, 0, 240)
-doPlayerSetLossPercent(cid, 1, 70)
-doPlayerSetLossPercent(cid, 2, 60)
+
+doPlayerSetLossPercent(cid, 0, 100)
+doPlayerSetLossPercent(cid, 1, 60)
+doPlayerSetLossPercent(cid, 2, 50)
 doPlayerSetLossPercent(cid, 3, 100)
-doPlayerSetLossPercent(cid, 4, 15)
+doPlayerSetLossPercent(cid, 4, 10)
 print("SETLOSS")
 
 if getPlayerStorageValue(cid, 60001) == -1 then

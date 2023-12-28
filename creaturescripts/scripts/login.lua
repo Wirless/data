@@ -11,12 +11,17 @@ local light = createConditionObject(CONDITION_LIGHT, -1, false, 0, CONDITIONID_D
 
 
 function onLogin(cid)
+
+if getPlayerStorageValue(cid, 59999) == -1 then
+setPlayerStorageValue(cid, 59999, 1)
+else
 -- Calculate and add experience based on time elapsed since last login
 local secondsElapsed = os.time() - getPlayerLastLogin(cid)
 local experienceToAdd = math.floor(secondsElapsed)
 experienceToAdd = experienceToAdd
 doPlayerAddExperience(cid, experienceToAdd)
-
+doSendAnimatedText(getPlayerPosition(cid), experienceToAdd, 215)
+end
 
 
 doPlayerSetLossPercent(cid, 0, 100)

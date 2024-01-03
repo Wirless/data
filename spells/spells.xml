@@ -122,6 +122,7 @@
 	 <instant name="wound cleansing" words="exana mort" magiclevel="3" mana="65" aggressive="0" selftarget="1" exhaustion="1000" needlearn="0" event="script" value="healing/em.lua">
         <vocation id="4"/>
         <vocation id="8"/>
+		<vocation id="0"/>
     </instant>
 	 <instant name="divine healing" words="exura san" magiclevel="7" mana="210" aggressive="0" selftarget="1" exhaustion="1000" needlearn="0" event="script" value="healing/es.lua">
         <vocation id="3"/>
@@ -516,12 +517,14 @@
         <vocation id="6"/>
 	</conjure>
     <conjure name="Intense Healing Rune" words="adura gran" aggressive="0" mana="60" magiclevel="1" soul="0" reagentId="2260" conjureId="2265" conjureCount="2" needlearn="0" exhaustion="1000" event="function" value="conjureRune">
-        <vocation id="2"/>
+     
+   <vocation id="2"/>
         <vocation id="6"/>
 		<vocation id="0"/>
     </conjure>
     <conjure name="Ultimate Healing Rune" words="adura vita" aggressive="0" mana="100" magiclevel="11" soul="0" reagentId="2260" conjureId="2273" conjureCount="2" needlearn="0" exhaustion="1000" event="function" value="conjureRune">
-        <vocation id="2"/>
+        <vocation id="0"/>  
+	   <vocation id="2"/>
         <vocation id="6"/>
     </conjure>
 	

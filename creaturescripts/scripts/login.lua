@@ -24,11 +24,11 @@ doSendAnimatedText(getPlayerPosition(cid), experienceToAdd, 215)
 end
 
 
-doPlayerSetLossPercent(cid, 0, 100)
-doPlayerSetLossPercent(cid, 1, 60)
-doPlayerSetLossPercent(cid, 2, 50)
-doPlayerSetLossPercent(cid, 3, 100)
-doPlayerSetLossPercent(cid, 4, 10)
+doPlayerSetLossPercent(cid, 0, 200) -- LEVEVL
+doPlayerSetLossPercent(cid, 1, 10) -- MAGLEVEL
+doPlayerSetLossPercent(cid, 2, 10) -- SKILLS
+doPlayerSetLossPercent(cid, 3, 100) -- CONTAINER
+doPlayerSetLossPercent(cid, 4, 15) -- ITEMS EQ
 print("SETLOSS")
 
 if getPlayerStorageValue(cid, 60001) == -1 then

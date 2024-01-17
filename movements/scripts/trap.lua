@@ -14,7 +14,7 @@ function onStepIn(cid, item, pos)
 end
 
 function onStepOut(cid, item, pos)
-	doTransformItem(item.uid, item.itemid + 1)
+	doTransformItem(item.uid, item.itemid - 1)
 	return true
 end
 

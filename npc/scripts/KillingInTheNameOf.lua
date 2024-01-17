@@ -11,8 +11,8 @@ function onThink()                                      npcHandler:onThink() end
 local choose = {}
 local cancel = {}
 local available = {}
-local EXPMULTIPLIER = 300
-local MONEYMULTIPLIER = 200
+local EXPMULTIPLIER = 3
+local MONEYMULTIPLIER = 2
 
 
 function creatureSayCallback(cid, type, msg)
